@@ -83,9 +83,9 @@ External Address	Public IP of PBX
 Local Networks	Your LAN subnet
 Example:
 
-External Address: 136.243.247.213
+External Address: XXX.XXX.XXX.XXX
 
-Local Networks: 136.243.247.208/29
+Local Networks: XXX.XXX.XXX.XXX/XX
 
 RTP Settings
 RTP Port Range
@@ -114,7 +114,7 @@ Settings:
 
 Setting	Value
 Enable DTLS	Yes
-Certificate	pbx.datalabsystems.com
+Certificate	hostname (host.example.com)
 DTLS Verify	Fingerprint
 The PBX must have a valid certificate for the domain used by Odoo.
 
@@ -137,8 +137,8 @@ Create provider:
 Field	Value
 Name	FreePBX
 Domain	pbx.datalabsystems.com
-WebSocket URL	wss://pbx.datalabsystems.com:8089/ws
-SIP Proxy	pbx.datalabsystems.com
+WebSocket URL	wss://host.example.com:8089/ws
+SIP Proxy	host.example.com
 Configure User
 Navigate to:
 
